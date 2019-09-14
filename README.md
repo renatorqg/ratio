@@ -1,2 +1,2 @@
 # ratio
-Razão matetática
+Razão matemática

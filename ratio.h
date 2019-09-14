@@ -15,6 +15,7 @@ class Ratio
 };
 
 int gcd(int, int);
+int lcm(int, int);
 
 Ratio operator*(const Ratio& x, const Ratio& y)
 {
@@ -62,4 +63,8 @@ int gcd(int m, int n)
                 n = r;
         }
         return m;
+}
+
+int lcm(int m, int n){
+    return (m*n)/gcd(m,n);
 }

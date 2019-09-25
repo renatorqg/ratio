@@ -1,6 +1,7 @@
 class Ratio
 {
 	friend Ratio operator*(const Ratio&, const Ratio&);
+        friend Ratio operator==(const Ratio&, consta Ratio&);
 	
 	public:
 		Ratio(int n=0, int d=1): num(n), den(d) { reduce(); }

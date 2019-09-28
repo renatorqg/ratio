@@ -11,4 +11,5 @@ int main()
 	z.print(); cout << endl;
 	x = y*z; // using the multiplication operator
 	x.print(); cout << endl;
+	return 0;
 }

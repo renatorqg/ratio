@@ -2,6 +2,7 @@ class Ratio
 {
 	friend Ratio operator*(const Ratio&, const Ratio&);
         friend Ratio operator==(const Ratio&, const Ratio&);
+	friend int operator==(const Ratio&, const Ratio&);
 	
 	public:
 		Ratio(int n=0, int d=1): num(n), den(d) { reduce(); }
@@ -68,4 +69,9 @@ int gcd(int m, int n)
 
 int lcm(int m, int n){
     return (m*n)/gcd(m,n);
+}
+
+int operator==(const Ratio& x, const Ratio& y)
+{
+	return (x.num * y.den == y.num * x.den);
 }
